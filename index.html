@@ -6,20 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-text-editor</title>
+    <link rel="stylesheet" href="tailwind.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header class="text-center">
-        <h1>This is our <span class="">text editor</span> !!!</h1>
+        <h1 class="text-5xl my-10">This is our simple <span class="text-violet-600 font-bold">text editor</span> !!!</h1>
     </header>
-    <main>
+    <main class="text-center">
+        <div class="border-2 w-3/4 mx-auto px-6 pb-6 bg-sky-300 rounded-lg">
+            <button id="make-default"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">Default</button>
+            <button id="make-bold"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">Bold</button>
 
+            <button id="make-italic"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">Italic</button>
+
+            <button id="make-underlined"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">Underline</button>
+
+            <button id="text-left"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">Left
+                Align</button>
+
+            <button id="text-right"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">Right
+                Align</button>
+
+            <button id="text-center"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">center
+                align</button>
+
+            <button id="text-justify"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">justify</button>
+
+
+            <input id="text-size" class="w-12" type="number" value="16">
+
+            <button id="toggle"
+                class="text-xl bg-amber-600 text-white px-4 py-2 rounded mx-2 my-2 hover:bg-amber-500">toggle</button>
+
+            <input id="text-color" type="color">
+            <!-- buttons  -->
+            <textarea id="text-field" class="border-2 block mx-auto p-6 w-[100%] h-[500px]" cols="50" rows="30"
+                placeholder="Please enter your text here."></textarea>
+        </div>
     </main>
     <footer>
 
     </footer>
-    <script src="./js/test.js"></script>
+    <script src="./js/utilities"></script>
+    <script src="./js/text-editor.js"></script>
 </body>
 
 </html>
